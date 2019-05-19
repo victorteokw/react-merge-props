@@ -54,9 +54,10 @@ const mergeProps = (...list) => {
   if (compacted.length === 1) {
     return compacted[0];
   }
-  const retval = compacted[0];
+  const firstArg = compacted[0];
+  const retval = firstArg.children !== undefined ? {} : firstArg;
   compacted.forEach((props, index) => {
-    if (index === 0) return;
+    if ((index === 0) && (firstArg.children === undefined)) return;
     for (const key in props) {
       if (key === 'children') continue;
       const value = props[key];

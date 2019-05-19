@@ -22,6 +22,9 @@ Merging react component props by the following rule:
 
 When creating extensible react components, this is what we need.
 
+The first argument is **mutated** for performance reason. If you don't want this
+behavior, please pass the first argument as an empty object.
+
 ## Installation
 
 Install this package with `npm`.

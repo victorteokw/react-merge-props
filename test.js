@@ -75,6 +75,12 @@ describe('does not merge normal properties', () => {
   });
 });
 
+describe('ignores children', () => {
+  it('removes children field for any args', () => {
+    expect(mergeProps({ children: '' }, { children: [] })).toEqual({});
+  });
+});
+
 describe('returns values', () => {
   it('returns empty object for zero arguments', () => {
     expect(mergeProps()).toEqual({});
