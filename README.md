@@ -12,8 +12,15 @@ Deep props merging functionality for React.
 
 ## Introduction
 
-When creating extensible react components, this is what we need.
+Merging react component props by the following rule:
 
+1. Normal props replace the former
+2. `children` are ignored
+3. `className` are concatenated
+4. `style` are shallow merged
+5. functions that have initial `on` are run in sequence from left to right
+
+When creating extensible react components, this is what we need.
 
 ## Installation
 
@@ -21,6 +28,21 @@ Install this package with `npm`.
 
 ```bash
 npm i react-merge-props -s
+```
+
+## Usage Pattern
+
+This package is very useful when creating wrapping components. For example:
+
+```jsx
+import React from 'react';
+import mergeProps from 'react-merge-props';
+
+const HeadingOne = (props) => (
+  <h1 {...mergeProps({ style: { 'color': 'red' }}, props)}>{props.children}</h1>
+);
+
+export default HeadingOne;
 ```
 
 ## License
