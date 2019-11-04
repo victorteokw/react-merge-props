@@ -113,6 +113,22 @@ describe('returns values', () => {
 });
 
 describe('on conflict', () => {
+  it('returns non undefined item', () => {
+    expect(mergeProps({
+      className: 'name1 name2'
+    }, {
+      className: undefined
+    })).toEqual({
+      className: 'name1 name2'
+    });
+    expect(mergeProps({
+      className: undefined
+    }, {
+      className: 'name3 name4'
+    })).toEqual({
+      className: 'name3 name4'
+    });
+  });
   it('the latter takes precedence', () => {
     expect(mergeProps({
       key1: 'val1'

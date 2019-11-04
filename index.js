@@ -5,6 +5,12 @@ const shouldMergeString = (key) => key === 'className';
 const shouldMergeFunc = (key) => key.slice(0, 2) === 'on';
 
 const merge = (key, value1, value2) => {
+  if (value1 === undefined) {
+    return value2;
+  }
+  if (value2 === undefined) {
+    return value1;
+  }
   if (typeof value1 !== typeof value2) {
     return value2;
   }
