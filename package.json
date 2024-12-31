@@ -1,6 +1,6 @@
 {
   "name": "react-merge-props",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Deep props merging functionality for React.",
   "main": "index.js",
   "files": [
@@ -8,15 +8,13 @@
     "index.d.ts"
   ],
   "scripts": {
-    "test": "jest",
-    "test-cov": "jest --coverage"
+    "test": "ava",
+    "test-cov": "ava --coverage"
   },
   "author": "Zhang Kai Yu <yeannylam@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-man": "^1.0.4",
-    "eslint-plugin-jest": "^22.5.1",
-    "jest": "^24.8.0"
+    "typescript": "^5",
+    "eslint": "^9"
   }
 }
