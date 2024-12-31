@@ -3,8 +3,6 @@ react-merge-props
 [![NPM version][npm-image]][npm-url]
 [![Build Status][github-ci-image]][github-ci-url]
 [![Test Coverage][cov-image]][cov-url]
-[![Dependency Status][daviddm-image]][daviddm-url]
-[![DevDependency Status][daviddm-image-dev]][daviddm-url-dev]
 [![License][license-image]][license-url]
 [![PR Welcome][pr-image]][pr-url]
 
@@ -54,10 +52,6 @@ MIT © [Victor Teo][license-url]
 [github-ci-url]: https://github.com/victorteokw/react-merge-props/actions/
 [cov-image]: https://img.shields.io/codecov/c/github/victorteokw/react-merge-props/master.svg?style=flat-square&logo=codecov
 [cov-url]: https://codecov.io/gh/victorteokw/react-merge-props
-[daviddm-image]: https://img.shields.io/david/victorteokw/react-merge-props.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/victorteokw/react-merge-props
-[daviddm-image-dev]: https://img.shields.io/david/dev/victorteokw/react-merge-props.svg?style=flat-square
-[daviddm-url-dev]: https://david-dm.org/victorteokw/react-merge-props?type=dev
 [license-image]: https://img.shields.io/github/license/victorteokw/react-merge-props.svg?style=flat-square
 [license-url]: https://github.com/victorteokw/react-merge-props/blob/master/LICENSE
 [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
