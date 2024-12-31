@@ -11,6 +11,16 @@
     "LICENSE",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorteokw/react-merge-props.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorteokw/react-merge-props/issues"
+  },
+  "homepage": "https://github.com/victorteokw/react-merge-props#readme",
+  "author": "Victor Teo <yeannylam@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "prepublish": "tsc",
     "pretest": "tsc",
@@ -18,8 +28,6 @@
     "test": "ava",
     "test-cov": "c8 ava"
   },
-  "author": "Victor Teo <yeannylam@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "ava": "^6.2.0",
     "c8": "^10.1.3",
