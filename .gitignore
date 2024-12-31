@@ -22,3 +22,7 @@ dist/
 
 # Coverage
 coverage
+
+# TypeScript
+dist
+tsconfig.tsbuildinfo

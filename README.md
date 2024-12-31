@@ -15,15 +15,11 @@ Deep props merging functionality for React.
 Merging react component props by the following rule:
 
 1. Normal props replace the former
-2. `children` are ignored
-3. `className` are concatenated
-4. `style` are shallow merged
-5. functions that have initial `on` are run in sequence from left to right
+2. `className` are concatenated
+3. `style` are shallow merged
+4. functions are run in sequence from left to right
 
 When creating extensible react components, this is what we need.
-
-The first argument is **mutated** for performance reason. If you don't want this
-behavior, please pass the first argument as an empty object.
 
 ## Installation
 
@@ -42,7 +38,7 @@ import React from 'react';
 import mergeProps from 'react-merge-props';
 
 const HeadingOne = (props) => (
-  <h1 {...mergeProps({ style: { 'color': 'red' }}, props)}>{props.children}</h1>
+  <h1 {...mergeProps({ style: { 'color': 'red' }}, props)} />
 );
 
 export default HeadingOne;
@@ -50,7 +46,7 @@ export default HeadingOne;
 
 ## License
 
-MIT © [Zhang Kai Yu][license-url]
+MIT © [Victor Teo][license-url]
 
 [npm-image]: https://img.shields.io/npm/v/react-merge-props.svg?style=flat-square&color=ff69b4&logo=react
 [npm-url]: https://npmjs.org/package/react-merge-props
