@@ -1,6 +1,6 @@
 {
   "name": "react-merge-props",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "Deep props merging functionality for React.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
