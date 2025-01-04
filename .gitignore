@@ -25,5 +25,4 @@ coverage
 .nyc_output
 
 # TypeScript
-dist
 tsconfig.tsbuildinfo
