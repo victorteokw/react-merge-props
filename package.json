@@ -26,7 +26,7 @@
     "pretest": "tsc",
     "pretest-cov": "tsc",
     "test": "ava",
-    "test-cov": "c8 --reporter=junit ava"
+    "test-cov": "c8 ava"
   },
   "devDependencies": {
     "ava": "^6.2.0",
