@@ -1,6 +1,6 @@
 {
   "name": "react-merge-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deep props merging functionality for React.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,7 +26,7 @@
     "pretest": "tsc",
     "pretest-cov": "tsc",
     "test": "ava",
-    "test-cov": "c8 ava"
+    "test-cov": "c8 --reporter=junit ava"
   },
   "devDependencies": {
     "ava": "^6.2.0",

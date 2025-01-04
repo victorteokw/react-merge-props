@@ -28,4 +28,8 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Test
-      run: npm test
+      run: npm run test-cov
+    - name: Uploader Coverage
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
