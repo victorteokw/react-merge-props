@@ -22,6 +22,7 @@ dist/
 
 # Coverage
 coverage
+.nyc_output
 
 # TypeScript
 dist
