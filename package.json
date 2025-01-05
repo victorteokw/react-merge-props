@@ -1,6 +1,6 @@
 {
   "name": "react-merge-props",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Deep props merging functionality for React.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,20 +23,15 @@
   "license": "MIT",
   "scripts": {
     "prepublish": "tsc",
-    "pretest": "tsc",
-    "pretest-cov": "tsc",
-    "test": "ava",
-    "test-cov": "nyc --include dist/index.js --reporter=lcov --reporter=text ava"
+    "test": "jest",
+    "test-cov": "jest --coverage"
   },
   "devDependencies": {
-    "ava": "^6.2.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@jest/globals": "^29.7.0",
     "eslint": "^9",
-    "nyc": "^17.1.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5"
-  },
-  "ava": {
-    "files": [
-      "dist/test.js"
-    ]
   }
 }

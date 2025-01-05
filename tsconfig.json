@@ -14,6 +14,6 @@
     "declarationDir": "./dist",
     "declarationMap": true,
   },
-  "include": ["src/index.ts", "src/test.ts"],
+  "include": ["src/index.ts"],
   "exclude": ["node_modules", "dist"]
 }

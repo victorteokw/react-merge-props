@@ -22,7 +22,6 @@ dist/
 
 # Coverage
 coverage
-.nyc_output
 
 # TypeScript
 tsconfig.tsbuildinfo
