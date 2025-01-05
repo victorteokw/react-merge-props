@@ -5,7 +5,7 @@ yarn-error.log
 node_modules/
 
 # Compiled ts files
-dist/
+dist
 
 # OS X hidden file
 .DS_Store
