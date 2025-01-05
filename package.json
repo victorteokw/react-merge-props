@@ -26,24 +26,17 @@
     "pretest": "tsc",
     "pretest-cov": "tsc",
     "test": "ava",
-    "test-cov": "nyc --include src/test.ts --reporter=lcov --reporter=text ava"
+    "test-cov": "nyc --include dist/index.js --reporter=lcov --reporter=text ava"
   },
   "devDependencies": {
-    "@septh/ts-run": "^2.0.0",
     "ava": "^6.2.0",
     "eslint": "^9",
     "nyc": "^17.1.0",
     "typescript": "^5"
   },
   "ava": {
-    "extensions": {
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--import=@septh/ts-run"
-    ],
     "files": [
-      "src/test.ts"
+      "dist/test.js"
     ]
   }
 }
